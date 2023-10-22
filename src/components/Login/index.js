@@ -1,11 +1,12 @@
 import { instance } from "../../service/api";
+import { useState } from "react";
 import "./login.css";
 
-async function login() {
+async function login(username, password) {
   try {
     const response = await instance.post("/login", {
-      email: "user",
-      password: "password",
+      email: username,
+      password: password,
     });
     console.log(response.data); // Access the response data
   } catch (err) {
@@ -14,8 +15,8 @@ async function login() {
 }
 
 const Login = () => {
-  // const [Username, setUsername] = userState("")
-  // const [password, setPassword] = userState("")
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <>
@@ -36,6 +37,8 @@ const Login = () => {
                   className="bg-white text-black outline-0 container-input-login"
                   type="text"
                   id=""
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <label className="text-xl mb-2 container-formlabel-login">
@@ -43,17 +46,19 @@ const Login = () => {
               </label>
               <div className="">
                 <input
-                  placeholder="inseria sua senha"
+                  placeholder="inseri sua senha"
                   className=" bg-white text-black outline-0 container-input-login"
                   type="text"
                   id=""
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
             </div>
             <button
               type="submit"
               className="border-black border-opacity-50 text-lg container-button-login"
-              onClick={login()}
+              onClick={login(username, password)}
             >
               Entrar
             </button>
