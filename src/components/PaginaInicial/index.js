@@ -1,4 +1,5 @@
 import "./Paginainicial.css";
+import Navbar from "../Navbar/index"
 
 const Paginainicial = () => {
   return (
@@ -7,9 +8,10 @@ const Paginainicial = () => {
       <header>  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
       </header>
-      <body>
+      <body className="container-">
         <div>
-            <nav class="navbar navbar-scroll d-flex align-items-center justify-content-between">
+            <Navbar />
+            {/* <nav>
                 <div class="teste d-flex align-items-center">
                   <div class="teste-logo">
                       <img class="img-nav" src="../../logo_main.jpg" alt="Minha Figura"/>
@@ -25,7 +27,7 @@ const Paginainicial = () => {
                       </div>
                   </div>
                 </div>
-            </nav>
+            </nav> */}
         </div>
         <section>
             <div class="card-main">

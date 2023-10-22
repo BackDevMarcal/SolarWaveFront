@@ -1,6 +1,8 @@
 import { instance } from "../../service/api";
 import { useState } from "react";
 import "./login.css";
+import logo from "../img/image1.png"
+
 
 async function login(username, password) {
   try {
@@ -20,41 +22,39 @@ const Login = () => {
 
   return (
     <>
-      <header className=" m-0 w-full container-header"></header>
       <section className="container-section">
-        <div className="container-login-login p-8 ">
-          <div>
-            <img src=""></img>
+        <div className="container-login-login p-2 ">
+          <div className="container-logo">
+            <img src={logo}/>
           </div>
           <form className="flex justify-center items-center flex-col">
-            <div className="dados">
-              <label className="text-xl mb-2 container-formlabel-login">
-                USUARIO :
-              </label>
-              <div className="">
+              <label className="text-xl mb-2 container-formlabel-login"></label>
                 <input
-                  placeholder="inseria seu usuario"
-                  className="bg-white text-black outline-0 container-input-login"
+                  placeholder="E-mail:"
+                  className="container-input-login"
                   type="text"
                   id=""
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                 />
-              </div>
-              <label className="text-xl mb-2 container-formlabel-login">
-                SENHA :
-              </label>
-              <div className="">
+              <label className="text-xl mb-2 container-formlabel-login"></label>
                 <input
-                  placeholder="inseri sua senha"
-                  className=" bg-white text-black outline-0 container-input-login"
                   type="text"
+                  placeholder="Password:"
+                  className="container-input-login"
                   id=""
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-              </div>
-            </div>
+                <input
+                  type="text"
+                  placeholder="Categoria:"
+                  className="container-input-login"
+                  id=""
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+            
             <button
               type="submit"
               className="border-black border-opacity-50 text-lg container-button-login"
@@ -63,10 +63,7 @@ const Login = () => {
               Entrar
             </button>
             <p className="text-center text-2xl">
-              Não tem cadastro ?
-              <a className="text-black">
-                <strong> Cadastrar-se </strong>
-              </a>
+              Esqueceu a senha ?
             </p>
           </form>
         </div>
