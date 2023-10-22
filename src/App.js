@@ -3,6 +3,7 @@ import Paginainicial from "./components/PaginaInicial";
 import Logado from "./components/Logado";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import React from "react";
+import LogadoProd from "./components/Logado-Prod";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Paginainicial />} />
           <Route path="/logado" element={<Logado />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/logadoprod" element={<LogadoProd />} />
         </Routes>
         {/* <Paginainicial /> */}
         {/* <Login /> */}

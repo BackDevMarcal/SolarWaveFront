@@ -1,7 +1,7 @@
-import "./Logado.css";
+import "./LogadoProd.css";
 import Navbar from "../Navbar/index";
 
-const Logado = () => {
+const LogadoProd = () => {
   return (
     <>
       <header>
@@ -16,7 +16,7 @@ const Logado = () => {
         <Navbar />
         <section>
           <div class="text-1">
-            <h4>Produtores interessados:</h4>
+            <h4>Cooperativa:</h4>
           </div>
           <div class="container ">
             <div class="row">
@@ -217,113 +217,10 @@ const Logado = () => {
               </div>
             </div>
           </div>
-          <div class="text-1">
-            <h4>Consumidores interessados:</h4>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card card-consumer card-ad">
-                  <div class="card-body text-center">
-                    <div class="row">
-                      <h5 class="card-title title-card-consumer col-lg-12">
-                        Nome gerador
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2"
-                      >
-                        Nome
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2"
-                      >
-                        E-mail
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2 mb-3"
-                      >
-                        Telefone
-                      </button>
-                      <a href="#" class="btn btn-primary btn-geral col-lg-12">
-                        Cancelar
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card card-consumer card-ad">
-                  <div class="card-body text-center">
-                    <div class="row">
-                      <h5 class="card-title title-card-consumer col-lg-12">
-                        Nome gerador
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2"
-                      >
-                        Nome
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2"
-                      >
-                        E-mail
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2 mb-3"
-                      >
-                        Telefone
-                      </button>
-                      <a href="#" class="btn btn-primary btn-geral col-lg-12">
-                        Cancelar
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card card-consumer card-ad">
-                  <div class="card-body text-center">
-                    <div class="row">
-                      <h5 class="card-title title-card-consumer col-lg-12">
-                        Nome gerador
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2"
-                      >
-                        Nome
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2"
-                      >
-                        E-mail
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-light btn-nome col-lg-12 btn-geral mt-2 mb-3"
-                      >
-                        Telefone
-                      </button>
-                      <a href="#" class="btn btn-primary btn-geral col-lg-12">
-                        Cancelar
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </body>
     </>
   );
 };
 
-export default Logado;
+export default LogadoProd;
