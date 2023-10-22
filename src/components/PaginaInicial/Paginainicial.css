@@ -13,6 +13,8 @@
 
 .text{
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-consumer{
@@ -40,11 +42,6 @@
     font-weight: bold;
 }
 
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 .nav-list li {
     display: inline-block;
@@ -149,14 +146,6 @@
     flex-shrink: 0;
 }
 
-.btn-nav{
-    margin-left:700px;
-}
-
-.home-nav{
-    margin-left:20px; 
-}
-
 .img-logo{
     margin-top:80px!important;
     display: flex;
@@ -183,4 +172,8 @@
     width: 253px;
     height: 85px;
     flex-shrink: 0;
+}
+
+.ml-btn-login{
+    margin-left:900px
 }

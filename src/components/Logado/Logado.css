@@ -10,3 +10,26 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.text-1{
+    margin-top:40px;
+    margin-left:20px!important;
+}
+
+.card-ad{
+    max-width: 300px;
+    max-height: 300px!important;
+    height: 200px;
+    background-color: #FF9E30;
+}
+
+.nav-color{
+    background-color:#FFCD3C!important;
+}
+
+.btn-geral{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 80%!important;
+}

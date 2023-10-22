@@ -16,10 +16,7 @@ const Paginainicial = () => {
                   </div>
                   <div class="nav-list">
                       <div class="row">
-                          <div class="home-nav col-lg-4">
-                              <b>HOME</b>
-                          </div>
-                          <div class="col-lg-4">
+                          <div class="col-lg-12 ml-btn-login">
                               <button type="button" class="btn btn-primary btn-nav">Login</button>
                           </div>
                       </div>
@@ -27,7 +24,7 @@ const Paginainicial = () => {
                 </div>
             </nav>
         </div>
-        <section>
+        <section >
             <div class="card-main">
                 <span></span>
                 <div class="content d-flex texto">
@@ -78,10 +75,7 @@ const Paginainicial = () => {
                 </div>
                 <div class="text">
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    O sistema tem como objetivo atuar na mediação entre vendedores de excedentes de energia, cooperativas que realizam a distribuição da energia e os consumidores que querem comprar energia limpa das cooperativas. Os usuários do tipo cooperativa vão ter acesso a uma lista de produtores de energia e possíveis consumidores que por meio dos dados de cadastro, irão possibilitar que a cooperativa entre em contato com estes usuário. Do mesmo modo os usuários produtores e consumidores poderão marcar interesse em cooperativas, fazendo com que um “card” com suas informações apareça para a cooperativa como interessados nos serviços da mesma
                     </p>
                 </div>
                
